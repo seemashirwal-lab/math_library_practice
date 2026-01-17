@@ -47,8 +47,8 @@ dependencies {
 publishing{
     publications{
         create<MavenPublication>("release") {
-            groupId = "com.github.seema"
-            artifactId = "MathLibrary"
+            groupId = "com.github.seemashirwal-lab"
+            artifactId = "math-library-practice"
             version = "1.0.0"
             afterEvaluate {
                 from(components["release"])

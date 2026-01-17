@@ -1,6 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
-    id("maven-publish")
+    //id("maven-publish")
 }
 
 android {
@@ -30,9 +30,9 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    publishing{
+    /*publishing{
         singleVariant("release")
-    }
+    }*/
 }
 
 dependencies {
@@ -44,6 +44,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
+/*
 publishing{
     publications{
         create<MavenPublication>("release") {
@@ -55,4 +56,4 @@ publishing{
             }
         }
     }
-}
+}*/
